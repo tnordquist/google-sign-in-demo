@@ -1,17 +1,22 @@
 package edu.cnm.deepdive.googlesignindemo.model;
 
+import com.google.gson.annotations.Expose;
 import java.util.Date;
 
 public class User {
 
+  @Expose
   private Long id;
 
+  @Expose
   private Date created;
 
+  @Expose
   private Date connected;
 
+  @Expose
   private String displayName;
-
+  
   private String oauthKey;
 
   public Long getId() {
